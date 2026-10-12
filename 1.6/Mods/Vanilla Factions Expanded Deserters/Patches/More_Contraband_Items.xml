@@ -1040,6 +1040,17 @@
 			</li>
 			
 			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "AmmoIndustrial"]</xpath>
+				<value>
+					<li Class="VFED.ContrabandExtension">
+						<category>VFED_Deserter</category>
+						<intelCost>1</intelCost>
+						<countMult>250</countMult>
+					</li>
+				</value>
+			</li>
+			
+			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationAddModExtension">
 				<xpath>/Defs/ThingDef[defName = "AmmoSpacer"]</xpath>
 				<value>
 					<li Class="VFED.ContrabandExtension">
@@ -1620,6 +1631,13 @@
 				<xpath>/Defs/ThingDef[defName = "AmmoExplosive"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/countMult</xpath>
 				<value>
 					<countMult>65</countMult>
+				</value>
+			</li>
+			
+			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "AmmoIndustrial"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/countMult</xpath>
+				<value>
+					<countMult>80</countMult>
 				</value>
 			</li>
 			

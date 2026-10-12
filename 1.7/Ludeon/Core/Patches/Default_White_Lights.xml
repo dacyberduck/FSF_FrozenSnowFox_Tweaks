@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>FrozenSnowFox.FrozenSnowFoxTweaks</modId>
+		<key>FSFDefaultWhiteLights</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+			<!-- Default White Lights -->
+				
+			<!-- Search for and replace all lights capable of using the colour picker while set to glowcolour (214,148,94,0) -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Glower"] [colorPickerEnabled [text()="true"]] [glowColor [text()="(214,148,94,0)"]]/ glowColor</xpath>
+				<value>
+					<glowColor>(255,255,255,0)</glowColor>
+				</value>
+			</li>
+				
+			</operations>
+		</Operation>
+			
+		</caseTrue>
+	</Operation>
+
+</Patch>

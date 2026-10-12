@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>FrozenSnowFox.FrozenSnowFoxTweaks</modId>
+		<key>FSFSterileTilesBeauty</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+			<!-- Sterile Tiles Aren't Ugly -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TerrainDef[defName = "SterileTile"
+					or defName = "RB_SterileGrateTile"
+					or defName = "RB_SterileStuddedTile"
+					]/statBases/Beauty</xpath>
+				<value>
+					<Beauty>0</Beauty>
+				</value>
+			</li>
+				
+			</operations>
+		</Operation>
+			
+		</caseTrue>
+	</Operation>
+
+</Patch>

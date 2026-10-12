@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>FrozenSnowFox.FrozenSnowFoxTweaks</modId>
+		<key>FSFNoPsychicRitualCD</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+			<!-- No Psychic Ritual Cooldown -->
+			
+			<!-- Anomaly DLC -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_VoidProvocation[defName = "VoidProvocation"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_ImbueDeathRefusal[defName = "ImbueDeathRefusal"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_Philophagy[defName = "Philophagy"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_SummonAnimals[defName = "SummonAnimals"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_SummonShamblers[defName = "SummonShamblers"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_SummonPitGate[defName = "SummonPitGate"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_Chronophagy[defName = "Chronophagy"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_PleasurePulse[defName = "PleasurePulse"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_NeurosisPulse[defName = "NeurosisPulse"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_BloodRain[defName = "BloodRain"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_Brainwipe[defName = "Brainwipe"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_Psychophagy[defName = "Psychophagy"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_SkipAbductionPlayer[defName = "SkipAbductionPlayer"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_SummonFleshbeastsPlayer[defName = "SummonFleshbeastsPlayer"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<!-- Attract Creep Joiner Ritual -->
+			
+			<li MayRequire="teri.attractcreepjoinerritual" Class="PatchOperationReplace">
+				<xpath>/Defs/PsychicRitualDef_AttractCreepJoiner[defName = "AttractCreepJoiner"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+			
+			<!-- ReSplice: Core -->
+			
+			<li MayRequire="ReSplice.XOTR.Core" Class="PatchOperationReplace">
+				<xpath>/Defs/ReSpliceCore.PsychicRitualDef_CreateVoidSpike[defName = "RS_DarkArchiteHarvesting"]/cooldownHours</xpath>
+				<value>
+					<cooldownHours>0</cooldownHours>
+				</value>
+			</li>
+				
+			</operations>
+		</Operation>
+			
+		</caseTrue>
+	</Operation>
+
+</Patch>

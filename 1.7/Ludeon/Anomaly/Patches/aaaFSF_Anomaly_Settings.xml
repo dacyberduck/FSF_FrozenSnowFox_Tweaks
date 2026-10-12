@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/XmlExtensions.SettingsMenuDef[defName = "FrozenSnowFoxTweaksSettings"]/settings/li[tag="FrozenSnowFoxTweaksAnomaly"]/settings</xpath>
+				<value>
+
+			
+						
+			<li Class="XmlExtensions.Setting.CollapsibleSettings">
+				<label>Anomaly Tweaks</label>
+				<headerFont>Medium</headerFont>
+				<defaultState>Closed</defaultState>
+				<anchor>Middle</anchor>
+				<tKey>FSFTweaksAnomalyTweaksTitle</tKey>
+				<settings>
+					
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+			
+			<!-- Tab - Ghouls -->
+			
+			<li Class="XmlExtensions.Setting.CollapsibleSettings">
+				<label>Ghouls</label>
+				<defaultState>Closed</defaultState>
+				<anchor>Left</anchor>
+				<tKey>FSFTweaksGhoulsTitle</tKey>
+				<settings>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+				<!-- Ghouls Can Use Any Ability -->
+			
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<label>Ghouls Can Use Any Ability</label>
+					<key>FSFGhoulsAnyAbility</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksGhoulsAnyAbilityTitle</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Ghouls have a white list of abilities they are allowed to use.  Any ability not on this list will not appear on the ghoul as a UI button to activate.  This tweak removes the white list which results in the game allowing ghouls to use any ability they might have gained via genes, bionics or other methods.</text>
+					<tKey>FSFTweaksGhoulsAnyAbilityDesc</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor"/>
+				<li Class="XmlExtensions.Setting.GapLine">
+					<spacing>12</spacing>
+				</li>
+				
+				<!-- Normal Ghoul Appearance -->
+			
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<label>Normal Ghoul Appearance</label>
+					<key>FSFNormalGhoulAppearance</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksNormalGhoulAppearanceTitle</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Disables the custom body, head and hairstyles ghouls normally use.  This means pawns made into ghouls will retain their normal appearance but have the dead greenish skin and grey hair.</text>
+					<tKey>FSFTweaksNormalGhoulAppearanceDesc</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor"/>
+				<li Class="XmlExtensions.Setting.GapLine">
+					<spacing>12</spacing>
+				</li>
+				
+				</settings>
+			</li>
+			
+			<!-- Tab - Misc -->
+			
+			<li Class="XmlExtensions.Setting.CollapsibleSettings">
+				<label>Misc</label>
+				<defaultState>Closed</defaultState>
+				<anchor>Left</anchor>
+				<tKey>FSFTweaksMiscTitle</tKey>
+				<settings>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+					
+				<!-- Movable Anomalies -->
+			
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<label>Movable Anomalies</label>
+					<key>FSFMovableAnomalies</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksMovableAnomaliesTitle</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Patches the Monolith and Obelisks so they can be moved and taken along on gravships.</text>
+					<tKey>FSFTweaksMovableAnomaliesDesc</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor"/>
+				<li Class="XmlExtensions.Setting.SetColor">
+					<color>(187,0,0)</color>
+				</li>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Warning: Try to avoid moving the monolith after activating it as the game really doesn't like that.  If you take it along on a gravship make sure you have ample room around it as the monolith has only one orientation and will overwrite anything in its space.  The monolith quest will fail when moving map but you should be able to attune to the monolith to advance its stage when you've encountered enough anomalies.</text>
+					<tKey>FSFTweaksMovableAnomaliesWarning</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor"/>
+				<li Class="XmlExtensions.Setting.GapLine">
+					<spacing>12</spacing>
+				</li>
+					
+				<!-- No Psychic Ritual Cooldown -->
+			
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<label>No Psychic Ritual Cooldown</label>
+					<key>FSFNoPsychicRitualCD</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksNoPsychicRitualCDTitle</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Removes the cooldown of Psychic Rituals allowing you to perform them again immediately providing you have the time and resources.</text>
+					<tKey>FSFTweaksNoPsychicRitualCDDesc</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor"/>
+				<li Class="XmlExtensions.Setting.GapLine">
+					<spacing>12</spacing>
+				</li>
+					
+				</settings>
+			</li>
+			
+			<!-- Tab - Shamblers -->
+			
+			<li Class="XmlExtensions.Setting.CollapsibleSettings">
+				<label>Shamblers</label>
+				<defaultState>Closed</defaultState>
+				<anchor>Left</anchor>
+				<tKey>FSFTweaksShamblersTitle</tKey>
+				<settings>
+					<li Class="XmlExtensions.Setting.GapLine">
+						<spacing>12</spacing>
+					</li>
+				
+				<!-- Lethal Shambler Infections -->
+				
+				<li MayRequireAnyOf="sarg.alphagenes,Ushanka.NecroaArchovirus" Class="XmlExtensions.Setting.Checkbox">
+					<label>Lethal Shambler Infections</label>
+					<key>FSFLethalShamblers</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksLethalShamblersTitle</tKey>
+				</li>
+				<li MayRequireAnyOf="sarg.alphagenes,Ushanka.NecroaArchovirus" Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li MayRequireAnyOf="sarg.alphagenes,Ushanka.NecroaArchovirus" Class="XmlExtensions.Setting.Text">
+					<text>Changes Shambler infections from Alpha Genes and Ushankas Necroa Archovirus to be lethal.  These infections can no longer be tended and the natural immunity gain is non-existent.</text>
+					<tKey>FSFTweaksLethalShamblersDesc</tKey>
+				</li>
+				<li MayRequireAnyOf="sarg.alphagenes,Ushanka.NecroaArchovirus" Class="XmlExtensions.Setting.SetColor"/>
+				
+				<!-- Permanent Shambler Infection -->
+				
+				<li MayRequireAnyOf="Ushanka.NecroaArchovirus" Class="XmlExtensions.Setting.Checkbox">
+					<label>Permanent Shambler Infection</label>
+					<key>FSFPermanentShamblerInfection</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksPermanentShamblerInfectionTitle</tKey>
+				</li>
+				<li MayRequireAnyOf="Ushanka.NecroaArchovirus" Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li MayRequireAnyOf="Ushanka.NecroaArchovirus" Class="XmlExtensions.Setting.Text">
+					<text>Adds a hidden hediff that can be applied in the Scenario Settings.  This hediff is a Shambler Infection that does not progress and cannot be cured.  This allows the pawn to immediately return as a shambler in the event of their death even if they weren't previously infected by a shambler.</text>
+					<tKey>FSFTweaksPermanentShamblerInfectionDesc</tKey>
+				</li>
+				<li MayRequireAnyOf="Ushanka.NecroaArchovirus" Class="XmlExtensions.Setting.SetColor"/>
+				
+				<!-- Realistic Shamblers -->
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<label>Realistic Shamblers</label>
+					<key>FSFRealisticShamblers</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksRealisticShamblersTitle</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Makes a number of changes to Shamblers so they more accurately resemble people from factions.  They can have bionics, they can have helmets and they can have better gear with higher health and quality.\nNote: This will make shamblers especially soldier variants more dangerous as they now can spawn with proper armour.</text>
+					<tKey>FSFTweaksRealisticShamblersDesc</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor"/>
+				
+				<!-- Shamblers Aggro Further -->
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<label>Shamblers Aggro Further</label>
+					<key>FSFShamblersAggroFurther</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksShamblersAggroFurtherTitle</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Changes the Shambler Acquire Aggro Radius from 20 to 50 and the Keep Aggro Radius from 30 to 60.  This causes Shamblers to seek out targets much further than before.\nNote this may negatively affect performance.</text>
+					<tKey>FSFTweaksShamblersAggroFurtherDesc</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor"/>
+				
+				<!-- Shamblers Wander Further -->
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<label>Shamblers Wander Further</label>
+					<key>FSFShamblersWanderFurther</key>
+					<defaultValue>false</defaultValue>
+					<tKey>FSFTweaksShamblersWanderFurtherTitle</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor">
+					<color>(163,177,188)</color>
+				</li>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>Changes the Shambler wander radius from 5 to the maximum 12.  This causes Shamblers to wander and spread out more instead of idling near the map edge.\nNote this may negatively affect performance.</text>
+					<tKey>FSFTweaksShamblersWanderFurtherDesc</tKey>
+				</li>
+				<li Class="XmlExtensions.Setting.SetColor"/>
+
+				</settings>
+			</li>
+
+					
+					
+					
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+					
+				</settings>
+			</li>
+						
+						
+						
+				</value>
+			</li>
+				
+			</operations>
+		</Operation>
+	
+</Patch>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/XmlExtensions.SettingsMenuDef[defName = "FrozenSnowFoxTweaksSettings"]/settings/li[tag="FrozenSnowFoxTweaksVREGenie"]/settings</xpath>
+				<value>
+
+			
+						
+			<li Class="XmlExtensions.Setting.CollapsibleSettings">
+				<label>Vanilla Races Expanded Genie Tweaks</label>
+				<headerFont>Medium</headerFont>
+				<defaultState>Closed</defaultState>
+				<anchor>Middle</anchor>
+				<tKey>FSFTweaksVREGenieTweaksTitle</tKey>
+				<settings>
+					
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+			
+			<!-- No Immunity Issues -->
+			
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<label>No Immunity Issues</label>
+				<key>FSFVREGenieNoImmunityIssues</key>
+				<defaultValue>false</defaultValue>
+				<tKey>FSFTweaksVREGenieNoImmunityIssuesTitle</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor">
+				<color>(163,177,188)</color>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Removes the genes No Immunity, Slow Diseases and Antibiotics Addiction Resistant from Genies so they no longer have immunity issues.</text>
+				<tKey>FSFTweaksVREGenieNoImmunityIssuesDesc</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor"/>
+			
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+					
+				</settings>
+			</li>
+					
+				</value>
+			</li>
+				
+			</operations>
+		</Operation>
+	
+</Patch>

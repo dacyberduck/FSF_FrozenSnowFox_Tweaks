@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>FrozenSnowFox.FrozenSnowFoxTweaks</modId>
+		<key>FSFRemoveTechprints</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			
+		<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Configurable Techprints</li>
+			</mods>
+			<nomatch Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+				<!-- Remove Techprints -->
+			
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef/techprintCount</xpath>
+					<value>
+						<techprintCount>0</techprintCount>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef/heldByFactionCategoryTags</xpath>
+				</li>
+				
+			</operations>
+			</nomatch>
+		</Operation>
+			
+		</caseTrue>
+	</Operation>
+
+</Patch>

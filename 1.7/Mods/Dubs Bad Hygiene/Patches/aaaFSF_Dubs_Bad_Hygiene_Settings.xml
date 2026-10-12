@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/XmlExtensions.SettingsMenuDef[defName = "FrozenSnowFoxTweaksSettings"]/settings/li[tag="FrozenSnowFoxTweaksDubsBadHygiene"]/settings</xpath>
+				<value>
+
+			
+						
+			<li Class="XmlExtensions.Setting.CollapsibleSettings">
+				<label>Dubs Bad Hygiene Tweaks</label>
+				<headerFont>Medium</headerFont>
+				<defaultState>Closed</defaultState>
+				<anchor>Middle</anchor>
+				<tKey>FSFTweaksDubsBadHygieneTweaksTitle</tKey>
+				<settings>
+					
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+					
+			<!-- Immortal Pipes -->
+			
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<label>Immortal Pipes</label>
+				<key>FSFDubsBadHygieneImmortalPipes</key>
+				<defaultValue>false</defaultValue>
+				<tKey>FSFTweaksDubsBadHygieneImmortalPipesTitle</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor">
+				<color>(163,177,188)</color>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Makes pipes immortal, they have no health and can't catch fire.</text>
+				<tKey>FSFTweaksDubsBadHygieneImmortalPipesDesc</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor"/>
+					
+			<li Class="XmlExtensions.Setting.GapLine">
+			</li>
+					
+				</settings>
+			</li>						
+				
+				</value>
+			</li>
+				
+			</operations>
+		</Operation>
+	
+</Patch>
