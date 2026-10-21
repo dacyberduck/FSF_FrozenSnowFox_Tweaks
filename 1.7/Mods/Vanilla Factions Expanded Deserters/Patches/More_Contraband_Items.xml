@@ -16,6 +16,9 @@
 
 				Intel = 100 Market Value
 				Critical Intel = 1000 Market Value
+				
+				Note: Deliveries count amount of purchases rather than purchase cost for delivery time.
+					  Contraband is also found in chests.  Therefore price cheaper items at 5 intel worth of cost.
 			-->
 			
 			<!-- Core -->
@@ -25,8 +28,8 @@
 				<value>
 					<li Class="VFED.ContrabandExtension">
 						<category>VFED_Deserter</category>
-						<intelCost>1</intelCost>
-						<countMult>45</countMult>
+						<intelCost>5</intelCost>
+						<countMult>225</countMult>
 					</li>
 				</value>
 			</li>
@@ -47,8 +50,8 @@
 				<value>
 					<li Class="VFED.ContrabandExtension">
 						<category>VFED_Imperial</category>
-						<intelCost>1</intelCost>
-						<countMult>25</countMult>
+						<intelCost>4</intelCost>
+						<countMult>100</countMult>
 					</li>
 				</value>
 			</li>
@@ -58,8 +61,8 @@
 				<value>
 					<li Class="VFED.ContrabandExtension">
 						<category>VFED_Imperial</category>
-						<intelCost>1</intelCost>
-						<countMult>10</countMult>
+						<intelCost>5</intelCost>
+						<countMult>50</countMult>
 					</li>
 				</value>
 			</li>
@@ -80,8 +83,8 @@
 				<value>
 					<li Class="VFED.ContrabandExtension">
 						<category>VFED_Deserter</category>
-						<intelCost>1</intelCost>
-						<countMult>2</countMult>
+						<intelCost>5</intelCost>
+						<countMult>10</countMult>
 					</li>
 				</value>
 			</li>
@@ -91,8 +94,8 @@
 				<value>
 					<li Class="VFED.ContrabandExtension">
 						<category>VFED_Deserter</category>
-						<intelCost>1</intelCost>
-						<countMult>5</countMult>
+						<intelCost>5</intelCost>
+						<countMult>25</countMult>
 					</li>
 				</value>
 			</li>
@@ -326,8 +329,8 @@
 				<value>
 					<li Class="VFED.ContrabandExtension">
 						<category>VFED_Imperial</category>
-						<intelCost>1</intelCost>
-						<countMult>25</countMult>
+						<intelCost>4</intelCost>
+						<countMult>100</countMult>
 					</li>
 				</value>
 			</li>
@@ -1210,8 +1213,8 @@
 				<value>
 					<li Class="VFED.ContrabandExtension">
 						<category>VFED_Imperial</category>
-						<intelCost>1</intelCost>
-						<countMult>15</countMult>
+						<intelCost>5</intelCost>
+						<countMult>75</countMult>
 					</li>
 				</value>
 			</li>
@@ -1377,6 +1380,61 @@
 				</value>
 			</li>
 			
+			<li MayRequire="vanillaexpanded.gravship2" Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "VGE_AstrofireLauncher"]</xpath>
+				<value>
+					<li Class="VFED.ContrabandExtension">
+						<category>VFED_Imperial</category>
+						<intelCost>10</intelCost>
+						<useCriticalIntel>true</useCriticalIntel>
+					</li>
+				</value>
+			</li>
+			
+			<li MayRequire="vanillaexpanded.gravship2" Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "VGE_GravlaunchCloaker"]</xpath>
+				<value>
+					<li Class="VFED.ContrabandExtension">
+						<category>VFED_Imperial</category>
+						<intelCost>10</intelCost>
+						<useCriticalIntel>true</useCriticalIntel>
+					</li>
+				</value>
+			</li>
+			
+			<li MayRequire="vanillaexpanded.gravship2" Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "VGE_Warcomputer"]</xpath>
+				<value>
+					<li Class="VFED.ContrabandExtension">
+						<category>VFED_Imperial</category>
+						<intelCost>10</intelCost>
+						<useCriticalIntel>true</useCriticalIntel>
+					</li>
+				</value>
+			</li>
+			
+			<li MayRequire="vanillaexpanded.gravship2" Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "VGE_GravFieldDilutor"]</xpath>
+				<value>
+					<li Class="VFED.ContrabandExtension">
+						<category>VFED_Imperial</category>
+						<intelCost>10</intelCost>
+						<useCriticalIntel>true</useCriticalIntel>
+					</li>
+				</value>
+			</li>
+			
+			<li MayRequire="vanillaexpanded.gravship2" Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "VGE_EmergencyGenerator"]</xpath>
+				<value>
+					<li Class="VFED.ContrabandExtension">
+						<category>VFED_Imperial</category>
+						<intelCost>10</intelCost>
+						<useCriticalIntel>true</useCriticalIntel>
+					</li>
+				</value>
+			</li>
+			
 			<!-- Vanilla Prestige Specialist Armours Reworked -->
 			
 			<li MayRequire="PrestigeSpecialistArmours.Final" Class="PatchOperationAddModExtension">
@@ -1419,8 +1477,8 @@
 				<value>
 					<li Class="VFED.ContrabandExtension">
 						<category>VFED_Deserter</category>
-						<intelCost>1</intelCost>
-						<countMult>5</countMult>
+						<intelCost>5</intelCost>
+						<countMult>25</countMult>
 					</li>
 				</value>
 			</li>
@@ -1628,30 +1686,58 @@
 			<!-- [LTS] Ammunition - Simple Ammo Pack -->
 			
 			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "AmmoExplosive"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/intelCost</xpath>
+				<value>
+					<countMult>5</countMult>
+				</value>
+			</li>
+			
+			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "AmmoExplosive"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/countMult</xpath>
 				<value>
-					<countMult>65</countMult>
+					<countMult>325</countMult>
+				</value>
+			</li>
+			
+			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "AmmoIndustrial"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/intelCost</xpath>
+				<value>
+					<countMult>5</countMult>
 				</value>
 			</li>
 			
 			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "AmmoIndustrial"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/countMult</xpath>
 				<value>
-					<countMult>80</countMult>
+					<countMult>400</countMult>
+				</value>
+			</li>
+			
+			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "AmmoSpacer"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/intelCost</xpath>
+				<value>
+					<countMult>5</countMult>
 				</value>
 			</li>
 			
 			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "AmmoSpacer"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/countMult</xpath>
 				<value>
-					<countMult>20</countMult>
+					<countMult>100</countMult>
+				</value>
+			</li>
+			
+			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "AmmoUltratech"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/intelCost</xpath>
+				<value>
+					<countMult>5</countMult>
 				</value>
 			</li>
 			
 			<li MayRequire="LimeTreeSnake.Ammo" Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "AmmoUltratech"]/modExtensions/li[@Class = "VFED.ContrabandExtension"]/countMult</xpath>
 				<value>
-					<countMult>15</countMult>
+					<countMult>75</countMult>
 				</value>
 			</li>
 			

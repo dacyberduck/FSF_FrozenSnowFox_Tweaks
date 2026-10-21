@@ -3069,15 +3069,6 @@
 				</settings>
 			</li>
 			
-			<!-- Packs Are Not Belts Settings -->
-			
-			<li Class="XmlExtensions.Setting.Group">
-				<tag>FrozenSnowFoxTweaksPacksAreNotBelts</tag>
-				<settings>
-                <!--Will inject settings here-->
-				</settings>
-			</li>
-			
 			<!-- Research Appropriation Settings -->
 			
 			<li Class="XmlExtensions.Setting.Group">

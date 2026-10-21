@@ -226,6 +226,20 @@
 			<!-- Vanilla Gravship Expanded Chapter 2 -->
 			
 			<li MayRequire="vanillaexpanded.gravship2" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VGE_Apparel_Astrorig"]/apparel/bodyPartGroups/li</xpath>
+				<value>
+					<li>Torso</li>
+				</value>
+			</li>
+			
+			<li MayRequire="vanillaexpanded.gravship2" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VGE_Apparel_DisposableOxygenPack"]/apparel/bodyPartGroups/li</xpath>
+				<value>
+					<li>Torso</li>
+				</value>
+			</li>
+			
+			<li MayRequire="vanillaexpanded.gravship2" Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "VGE_GravshipBombardmentTargeter"]/apparel/bodyPartGroups/li</xpath>
 				<value>
 					<li>Legs</li>

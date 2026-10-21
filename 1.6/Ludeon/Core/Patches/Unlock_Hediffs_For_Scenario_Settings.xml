@@ -53,6 +53,15 @@
 					<scenarioCanAdd>True</scenarioCanAdd>
 				</value>
 			</li>
+			
+			<!-- Vanilla Gravship Expanded - Chapter 2 -->
+				
+			<li MayRequire="vanillaexpanded.gravship2" Class="XmlExtensions.PatchOperationAddOrReplace">
+				<xpath>/Defs/HediffDef[defName="VGE_ExowormInfestation"]</xpath>
+				<value>
+					<scenarioCanAdd>True</scenarioCanAdd>
+				</value>
+			</li>
 				
 			<!-- Vanilla Events Expanded - Traitor -->
 				
