@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>FrozenSnowFox.FrozenSnowFoxTweaks</modId>
+		<key>FSFMilkableMuffaloShearableYak</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				
+			<!-- Milkable Muffalos -->
+				
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Muffalo"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Milkable">
+						<milkDef>Milk</milkDef>
+						<milkIntervalDays>1</milkIntervalDays>
+						<milkAmount>8</milkAmount>
+					</li>
+				</value>
+			</li>
+			
+			<!-- Shearable Yaks -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<ThingDef ParentName="WoolBase">
+						<defName>FSFWoolYak</defName>
+						<label>yak wool</label>
+						<description>Rough and dense fiber of a yak. Good insulation, but very rare.</description>
+						<possessionCount>30</possessionCount>
+						<statBases>
+							<StuffPower_Insulation_Cold>38</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+						</statBases>
+						<graphicData>
+							<color>(77,69,66)</color>
+						</graphicData>
+						<stuffProps>
+							<color>(77,69,66)</color>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Yak"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Shearable">
+						<woolDef>FSFWoolYak</woolDef>
+						<shearIntervalDays>10</shearIntervalDays>
+						<woolAmount>40</woolAmount>
+					</li>
+				</value>
+			</li>
+				
+			</operations>
+		</Operation>
+			
+		</caseTrue>
+	</Operation>
+
+</Patch>

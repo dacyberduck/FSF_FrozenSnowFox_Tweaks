@@ -165,6 +165,26 @@
 				<tKey>FSFTweaksWolvesAreDogsDesc</tKey>
 			</li>
 			<li Class="XmlExtensions.Setting.SetColor"/>
+			<li Class="XmlExtensions.Setting.GapLine">
+				<spacing>12</spacing>
+			</li>
+
+			<!-- Milkable muffalos -->
+			
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<label>Milkable Muffalos and Shearable Yaks</label>
+				<key>FSFMilkableMuffaloShearableYak</key>
+				<defaultValue>false</defaultValue>
+				<tKey>FSFTweaksMilkableMuffaloShearableYakTitle</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor">
+				<color>(163,177,188)</color>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Muffalos produce milk as well. Yaks produce wool as well.</text>
+				<tKey>FSFTweaksMilkableMuffaloShearableYakDesc</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.SetColor"/>
 			
 				</settings>
 			</li>
