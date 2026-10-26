@@ -51,6 +51,26 @@
 					<harvestYield>6</harvestYield>
 				</value>
 			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_Rice"]/plant</xpath>
+				<value>
+					<harvestMinGrowth>0.50</harvestMinGrowth>
+					<harvestTag>Standard</harvestTag>
+					<harvestedThingDef>Hay</harvestedThingDef>
+					<harvestYield>3</harvestYield>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_Corn"]/plant</xpath>
+				<value>
+					<harvestMinGrowth>0.50</harvestMinGrowth>
+					<harvestTag>Standard</harvestTag>
+					<harvestedThingDef>Hay</harvestedThingDef>
+					<harvestYield>16</harvestYield>
+				</value>
+			</li>
 			
 		<!-- Biotech -->
 			
